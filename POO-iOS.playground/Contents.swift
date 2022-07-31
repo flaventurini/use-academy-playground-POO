@@ -161,23 +161,23 @@ Swift.version
 
 class Animal {
     func dormir() {
-        
+        print("dormindo..")
     }
     
     func comer() {
-        
+        print("comendo")
     }
 }
 
 class Ave: Animal {
     func comportamentoAve() {
-        
+        print("penas")
     }
 }
 
 class Mamifero: Animal {
     func comportamentoMamifero() {
-        
+        print("pelos amarelos")
     }
 }
 
