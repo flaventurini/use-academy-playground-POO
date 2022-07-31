@@ -18,7 +18,7 @@ let carrinho = MeuCarro(portas: <#T##Int#>, cor: <#T##String#>, velocidadeMaxima
 class Carro {
     var portas: Int
     var cor: String
-    var velocidadeMaxima: Int
+    private var velocidadeMaxima: Int
     
     init(portas: Int, cor: String, velocidadeMaxima: Int) {
         self.portas = portas
@@ -37,8 +37,34 @@ class Carro {
     func ligarArCondicionado() {
         print("gelou")
     }
+    
+    func getVelocidade() -> Int {
+        return velocidadeMaxima
+    }
 }
 
 let uno = Carro(portas: 2, cor: "vermelho", velocidadeMaxima: 200)
 uno.ligarArCondicionado()
 uno.acelerar()
+
+// Não roda, pq a variável é privada = print("velocidade", uno.velocidadeMaxima)
+print("velocidade", uno.getVelocidade())
+
+
+// Exemplo de funções protegidas pelo encapsulamento para que sejam utilizadas apenas dentro da própria classe e não fora dessa estrutura:
+
+class ContaCorrente {
+    func calculaCredito() -> Double {
+        getCheque()
+        getBalance()
+        return 0.0
+    }
+    
+    private func getCheque() {
+        
+    }
+    
+    private func getBalance() {
+        
+    }
+}
