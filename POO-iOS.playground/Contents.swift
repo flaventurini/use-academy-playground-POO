@@ -138,14 +138,53 @@ let cc = ContaCorrente()
 cc.transferenciaPIX()
 
 
+// Criando estâncias dentro da classe (para não precisar declarar as variáveis fora:
+
 class Swift {
-    func geraComentarios() {
+    
+    static let version: String = "5.6"
+    
+    class func geraComentarios() {
         
     }
     
-    func geraMARKS() {
+    class func geraMARKS() {
         
     }
 }
 
+Swift.geraMARKS()
+Swift.geraComentarios()
+Swift.version
 
+// Exercício de aula:
+
+class Animal {
+    func dormir() {
+        
+    }
+    
+    func comer() {
+        
+    }
+}
+
+class Ave: Animal {
+    func comportamentoAve() {
+        
+    }
+}
+
+class Mamifero: Animal {
+    func comportamentoMamifero() {
+        
+    }
+}
+
+class BemTeVi: Ave {
+    
+}
+
+class Baleia: Mamifero {
+    
+}
