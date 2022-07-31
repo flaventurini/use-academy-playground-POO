@@ -4,7 +4,7 @@ import Foundation
 
 /*
 
-O struct não precisa de inicializados. O Class, o que vamos usar nesse código, precisa do 'init'
+O struct não precisa de inicializados. O Class, o que vamos usar nesse código, precisa do 'init', porque não estamos informando os valores iniciais na declaração de variável
  
  struct MeuCarro {
     var portas: Int
@@ -25,4 +25,20 @@ class Carro {
         self.cor = cor
         self.velocidadeMaxima = velocidadeMaxima
     }
+    
+    func acelerar() {
+        print("acelerou")
+    }
+    
+    func desacelerar() {
+        print("desacelerou")
+    }
+    
+    func ligarArCondicionado() {
+        print("gelou")
+    }
 }
+
+let uno = Carro(portas: 2, cor: "vermelho", velocidadeMaxima: 200)
+uno.ligarArCondicionado()
+uno.acelerar()
