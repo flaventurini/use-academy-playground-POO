@@ -121,3 +121,31 @@ class Macbook: Computador {
 
 let macbook = Macbook()
 macbook.formatar()
+
+// Extensão
+
+extension ContaCorrente {
+    func transferenciaTED() {
+        
+    }
+    
+    func transferenciaPIX() {
+        
+    }
+}
+
+let cc = ContaCorrente()
+cc.transferenciaPIX()
+
+
+class Swift {
+    func geraComentarios() {
+        
+    }
+    
+    func geraMARKS() {
+        
+    }
+}
+
+
